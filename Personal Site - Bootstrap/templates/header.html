@@ -33,7 +33,7 @@
       <!-- Nav Bar -->
 
       <nav class="navbar navbar-expand-xl navbar-dark">
-        <a class="navbar-brand" href="index.html">Natalie Misasi</a>
+        <a class="navbar-brand" href="{{ url_for('home') }}">Natalie Misasi</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,13 +41,13 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="professional-experience.html">Professional Experience</a>
+              <a class="nav-link" href="{{ url_for('professional-experience') }}">Professional Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="education.html">Education</a>
+              <a class="nav-link" href="{{ url_for('education') }}">Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
             </li>
           </ul>
         </div>
