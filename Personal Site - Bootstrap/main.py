@@ -1,6 +1,7 @@
 import smtplib
 import os
 from flask import Flask, render_template, request
+from flask_bootstrap import Bootstrap
 import datetime
 
 EMAIL_ADDRESS = os.getenv("GMAIL_ADDRESS")
