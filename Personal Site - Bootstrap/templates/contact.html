@@ -1,0 +1,66 @@
+{% include 'header.html' %}
+
+       <!-- Title -->
+
+        <div class="heading-container">
+           {% if msg_sent: %}
+            <h1 class="subpage-big-heading">Successfully sent your message</h1>
+            {% else: %}
+            <h1 class="subpage-big-heading">Contact Me</h1>
+            {% endif %}
+        </div>
+
+
+      </div>
+  </section>
+
+    <!-- Body -->
+    <section class="white-section" id="contact">
+
+      <h1 class="subpage-heading">Fill out the form below to send an email<br>or message me on LinkedIn.</h1>
+        <a class="btn btn-dark btn-lg download-button" href="https://www.linkedin.com/in/nataliemisasi/"><i class="fab fa-linkedin"></i> Connect with me</a>
+      <div class="contact-form">
+        <form name="sentMessage" id="contactForm" action="{{ url_for('contact') }}" method="post" novalidate>
+            <div class="form-floating">
+                <input name="name" class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                <label for="name">Name</label>
+                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+            </div>
+            <br>
+            <div class="form-floating">
+                <input name="company" class="form-control" id="company" type="text" placeholder="Enter your company name..." />
+                <label for="company">Company Name</label>
+            </div>
+            <br>
+            <div class="form-floating">
+                <input name="email" class="form-control" id="email" type="email" placeholder="Enter your email..." data-sb-validations="required,email" />
+                <label for="email">Email address</label>
+                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+            </div>
+            <br>
+            <div class="form-floating">
+                <textarea name="message" class="form-control" id="message" placeholder="Enter your message here..." style="height: 12rem" data-sb-validations="required"></textarea>
+                <label for="message">Message</label>
+                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+            </div>
+            <br />
+
+            <!-- Submit success message-->
+            <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">
+                    <div class="fw-bolder">Form submission successful!</div>
+                </div>
+            </div>
+
+            <!-- Submit error message-->
+            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+
+            <!-- Submit Button-->
+            <button class="btn btn-dark text-uppercase " id="submitButton" type="submit">Send Message</button>
+        </form>
+    </div>
+
+    </section>
+
+{% include 'footer.html' %}
