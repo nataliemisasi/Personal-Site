@@ -8,6 +8,7 @@ EMAIL_ADDRESS = os.getenv("GMAIL_ADDRESS")
 PASSWORD = os.getenv("PASSWORD")
 
 app = Flask(__name__)
+Bootstrap(app)
 
 current_year = datetime.datetime.now().year
 
