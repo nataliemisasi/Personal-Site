@@ -30,7 +30,7 @@ def professional():
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
-#         data = request.form
+        data = request.form
         data = request.form
         send_email(data["name"], data["company"], data["email"], data["message"])
         return render_template("contact.html", year=current_year, msg_sent=True)
