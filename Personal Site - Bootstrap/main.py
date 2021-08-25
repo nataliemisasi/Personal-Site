@@ -3,8 +3,8 @@ import os
 from flask import Flask, render_template, request
 import datetime
 
-EMAIL_ADDRESS = os.environ.get("GMAIL_ADDRESS")
-PASSWORD = os.environ.get("PASSWORD")
+EMAIL_ADDRESS = os.getenv("GMAIL_ADDRESS")
+PASSWORD = os.getenv("PASSWORD")
 
 app = Flask(__name__)
 
