@@ -9,12 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: nataliemisasi/heroku-deploy@v3.12.12 # This is the action
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "nataliemisasi" #Must be unique in Heroku
-          heroku_email: ${{secrets.PERSONAL_GMAIL}}
+      - name: Get environmental variables
         env:
           PASSWORD: ${{ secrets.PASSWORD }}
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
