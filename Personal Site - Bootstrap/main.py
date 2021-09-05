@@ -8,7 +8,7 @@ import datetime
 # PASSWORD = os.environ['PASSWORD']
 
 PASSWORD: ${{ secrets.PASSWORD }}
-EMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
 
 app = Flask(__name__)
 Bootstrap(app)
