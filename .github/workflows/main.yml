@@ -11,5 +11,8 @@ jobs:
     steps:
       - name: Get environmental variables
         env:
-          PASSWORD: ${{ secrets.PASSWORD }}
-          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          PASSWORD: '${{ secrets.PASSWORD }}'
+          GMAIL_ADDRESS: '${{ secrets.GMAIL_ADDRESS }}'
+      - name: "Run python script"
+        run: |
+          python main.py
