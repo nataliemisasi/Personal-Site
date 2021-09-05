@@ -7,8 +7,6 @@ import datetime
 # GMAIL_ADDRESS = os.environ['GMAIL_ADDRESS']
 # PASSWORD = os.environ['PASSWORD']
 
-PASSWORD: {{ secrets.PASSWORD }}
-GMAIL_ADDRESS: {{ secrets.GMAIL_ADDRESS }}
 
 app = Flask(__name__)
 Bootstrap(app)
