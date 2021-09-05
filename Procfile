@@ -1,1 +1,1 @@
-web: gunicorn main:app
+web: gunicorn Personal\ Site\ -\ Bootstrap/.main:app
