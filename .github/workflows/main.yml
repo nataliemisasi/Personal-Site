@@ -15,4 +15,4 @@ jobs:
           GMAIL_ADDRESS: '${{ secrets.GMAIL_ADDRESS }}'
       - name: "Run python script"
         run: |
-          python main.py
+          python
