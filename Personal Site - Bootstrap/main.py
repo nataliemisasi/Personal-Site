@@ -4,11 +4,11 @@ from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap
 import datetime
 
-# EMAIL_ADDRESS = os.environ['GMAIL_ADDRESS']
-# PASSWORD = os.environ['PASSWORD']
+EMAIL_ADDRESS = os.environ['GMAIL_ADDRESS']
+PASSWORD = os.environ['PASSWORD']
 
-PASSWORD: ${{ secrets.PASSWORD }}
-GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+# PASSWORD: {{ secrets.PASSWORD }}
+# GMAIL_ADDRESS: {{ secrets.GMAIL_ADDRESS }}
 
 app = Flask(__name__)
 Bootstrap(app)
