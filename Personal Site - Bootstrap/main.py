@@ -37,7 +37,7 @@ def contact():
         return render_template("contact.html", year=current_year, msg_sent=True)
     return render_template("contact.html", year=current_year, msg_sent=False)
 
-def send_email(name, company, email, message, msg.encode("utf8")):
+def send_email(name, company, email, message):
     email_message = f"Subject:New Message\n\nName: {name}\nCompany: {company}\nEmail: {email}\nMessage: {message}"
     with smtplib.SMTP("smtp.gmail.com", 587) as connection:
         connection.starttls()
