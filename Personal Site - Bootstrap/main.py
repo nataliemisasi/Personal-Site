@@ -1,3 +1,4 @@
+#coding: utf-8
 import smtplib
 import os
 from flask import Flask, render_template, request
@@ -36,7 +37,7 @@ def contact():
         return render_template("contact.html", year=current_year, msg_sent=True)
     return render_template("contact.html", year=current_year, msg_sent=False)
 
-def send_email(name, company, email, message):
+def send_email(name, company, email, message, msg.encode("utf8")):
     email_message = f"Subject:New Message\n\nName: {name}\nCompany: {company}\nEmail: {email}\nMessage: {message}"
     with smtplib.SMTP("smtp.gmail.com", 587) as connection:
         connection.starttls()
