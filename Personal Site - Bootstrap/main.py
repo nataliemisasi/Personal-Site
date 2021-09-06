@@ -5,8 +5,8 @@ from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap
 import datetime
 
-GMAIL_ADDRESS = os.environ.get('GMAIL_ADDRESS')
-PASSWORD = os.environ.get('PASSWORD')
+GMAIL = os.environ.get('GMAIL_ADDRESS')
+PASS = os.environ.get('PASSWORD')
 
 app = Flask(__name__)
 Bootstrap(app)
@@ -41,8 +41,8 @@ def send_email(name, company, email, message):
     email_message = f"Subject:New Message\n\nName: {name}\nCompany: {company}\nEmail: {email}\nMessage: {message}"
     with smtplib.SMTP("smtp.gmail.com", 587) as connection:
         connection.starttls()
-        connection.login(GMAIL_ADDRESS, PASSWORD)
-        connection.sendmail(GMAIL_ADDRESS, GMAIL_ADDRESS, email_message)
+        connection.login(GMAIL, PASS)
+        connection.sendmail(GMAIL, GMAIL, email_message)
 
 
 if __name__ == "__main__":
