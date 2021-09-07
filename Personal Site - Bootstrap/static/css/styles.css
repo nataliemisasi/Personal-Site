@@ -235,7 +235,7 @@ p {
 }
 
 
-@media (max-device-width: 700px) {
+@media (max-device-width: 900px) {
   .section-heading {
     text-align: center;
   }
