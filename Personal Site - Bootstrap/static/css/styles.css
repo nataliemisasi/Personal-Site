@@ -204,14 +204,19 @@ p {
 }
 
 @media (max-width: 700px) {
+    .natalie-image {
+    width: 75%;
+  }
   
     /* Headings */
   .big-heading {
     font-size: 2rem;
+    line-height: 1;
   }
 
   .section-heading {
     font-size: 2rem;
+    line-height: 1;
     text-align: center;
   }
   
@@ -220,6 +225,11 @@ p {
     padding-bottom: 2.5rem;
   }
 
+  .skills-text {
+  font-size: 2rem;
+  line-height: 1;
+}
+  
   .skill-row {
     width: 60%;
     text-align: center;
