@@ -233,35 +233,3 @@ p {
     font-size: .8rem;
   }
 }
-
-
-@media (max-device-width: 900px) {
-  .section-heading {
-    text-align: center;
-  }
-  .skill-row {
-    width: 60%;
-    text-align: center;
-  }
-  .skill-row p {
-    text-align: left;
-  }
-
-  .sls-photo {
-    float: none;
-    padding-bottom: 15px;
-  }
-
-  .lego-photo {
-    float: none;
-    padding-bottom: 15px;
-  }
-
-  .skills-text {
-    font-size: 2rem;
-  }
-
-  .icon {
-    font-size: .8rem;
-  }
-}
