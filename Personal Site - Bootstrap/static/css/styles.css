@@ -215,7 +215,7 @@ p {
   }
   
   .header-button {
-  margin: 3%
+    margin: 3%
   }
   
   .section-heading {
@@ -239,12 +239,12 @@ p {
   
   .sls-photo {
     float: none;
-    padding-bottom: 15px;
+    padding: 0 0 15px 0;
   }
 
   .lego-photo {
     float: none;
-    padding-bottom: 15px;
+    padding: 0 0 15px 0;
   }
 
   .skills-text {
