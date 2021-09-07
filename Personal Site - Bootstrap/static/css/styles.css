@@ -74,8 +74,8 @@ p {
   text-align: left;
 }
 
-/* Download Buttons */
-.download-button {
+/* Header Buttons */
+.header-button {
   margin: 5% 3% 5% 0;
 }
 
@@ -212,6 +212,10 @@ p {
   .big-heading {
     font-size: 2.5rem;
     line-height: 1.2;
+  }
+  
+  .header-button {
+  margin: 3%
   }
   
   .section-heading {
