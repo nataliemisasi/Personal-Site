@@ -239,12 +239,14 @@ p {
   
   .sls-photo {
     float: none;
-    padding: 0 0 15px 0;
+    padding-bottom: 15px;
+    margin-right: 0;
   }
 
   .lego-photo {
     float: none;
-    padding: 0 0 15px 0;
+    padding-bottom: 15px;
+    margin-right: 0;
   }
 
   .skills-text {
