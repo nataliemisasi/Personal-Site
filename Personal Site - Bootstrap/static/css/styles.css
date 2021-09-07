@@ -192,7 +192,7 @@ p {
   color: #fff;
 }
 
-@media screen and (min-width: 701px) and (max-width: 992px) {
+@media screen and (max-width: 992px) {
   #title .container-fluid{
     text-align: center;
   }
@@ -210,13 +210,13 @@ p {
   }
   
   .big-heading {
-    font-size: 1.5rem;
-    line-height: 1;
+    font-size: 2.5rem;
+    line-height: 1.2;
   }
   
   .section-heading {
-    font-size: 1.5rem;
-    line-height: 1;
+    font-size: 2.5rem;
+    line-height: 1.2;
     text-align: center;
   }
   
@@ -244,8 +244,8 @@ p {
   }
 
   .skills-text {
-    font-size: 1.5rem;
-    line-height: 1;
+    font-size: 2.5rem;
+    line-height: 1.5;
   }
 
   .icon {
