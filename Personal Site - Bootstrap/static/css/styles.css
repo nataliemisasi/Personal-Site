@@ -188,6 +188,7 @@ p {
 }
 .social-icon {
   margin: 20px 10px;
+  color: #fff;
 }
 
 @media (max-width: 992px) {
