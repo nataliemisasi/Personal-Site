@@ -204,40 +204,40 @@ p {
 }
 
 @media screen and (max-width: 700px) {
-    .natalie-image {
+  
+  .natalie-image {
     width: 85%;
   }
   
-    /* Headings */
   .big-heading {
     font-size: 1.5rem;
     line-height: 1;
   }
-
+  
   .section-heading {
     font-size: 1.5rem;
     line-height: 1;
     text-align: center;
   }
   
-    /* Navigation Bar */
   .navbar {
     padding-bottom: 1.5rem;
   }
-
+  
   .skills-text {
-  font-size: 1.5rem;
-  line-height: 1;
-}
+    font-size: 1.5rem;
+    line-height: 1;
+  }
   
   .skill-row {
     width: 60%;
     text-align: center;
   }
+  
   .skill-row p {
     text-align: left;
   }
-
+  
   .sls-photo {
     float: none;
     padding-bottom: 15px;
